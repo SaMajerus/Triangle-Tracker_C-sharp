@@ -6,7 +6,7 @@ namespace Triangle
     {
       if((a == b) && (b==c))
       {
-        return false;
+        return true;
       }
       else 
       {
