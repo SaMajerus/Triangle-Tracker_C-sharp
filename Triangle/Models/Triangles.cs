@@ -17,7 +17,7 @@ namespace Triangle
       }
       else if (a + b > c)
       {  //If one side is <= the sum of the other two sides, then it is a valid Triangle, and thus, a scalene
-        return false;
+        return true;
       }
       else 
       {

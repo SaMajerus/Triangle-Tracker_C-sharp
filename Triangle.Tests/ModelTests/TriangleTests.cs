@@ -9,7 +9,7 @@ namespace Triangle.Tests
     [TestMethod]
     public void IsTriangle_True(){
       Triangle testTriangle = new Triangle();
-      Assert.AreEqual(true, testTriangle.IsTriangle(1, 2, 3));
+      Assert.AreEqual(true, testTriangle.IsTriangle(1, 2, 4));
     }
 
     [TestMethod]
