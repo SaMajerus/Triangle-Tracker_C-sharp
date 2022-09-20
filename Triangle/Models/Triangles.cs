@@ -1,6 +1,6 @@
-namespace Calendar
+namespace Triangle
 {
-  public class LeapYear
+  public class TriangleType
   {
     public bool IsLeapYear(int year)
     {
