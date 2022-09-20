@@ -6,15 +6,22 @@ namespace Triangle
     {
       if((a == b) && (b==c))
       {
-        if(c != a){
+        if(c != a)
+        {
           return true; //Isosceles
-        }else{
+        }
+        else
+        {
           return true; //Equilateral
         }
       }
+      else if (a + b > c)
+      {  //If one side is <= the sum of the other two sides, then it is a valid Triangle, and thus, a scalene
+        return false;
+      }
       else 
       {
-        return true; //Scalene(?)
+        return true; //Is triangle
       }
     }
 

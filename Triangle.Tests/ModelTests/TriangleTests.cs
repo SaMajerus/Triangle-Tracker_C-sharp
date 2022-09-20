@@ -23,6 +23,13 @@ namespace Triangle.Tests
       Triangle testTriangle = new Triangle();
       Assert.AreEqual(true, testTriangle.IsTriangle(5, 3, 5));
     }
+
+    [TestMethod]
+    public void IsTriangle_IsScalene_True(){
+      Triangle testTriangle = new Triangle();
+      Assert.AreEqual(true, testTriangle.IsTriangle(5, 3, 7));
+    }
+
     
   }
 }
