@@ -6,13 +6,16 @@ namespace Triangle
     {
       if((a == b) && (b==c))
       {
-        return true;
+        if(c != a){
+          return true; //Isosceles
+        }else{
+          return true; //Equilateral
+        }
       }
       else 
       {
-        return false;
+        return true; //Scalene(?)
       }
-
     }
 
   }
