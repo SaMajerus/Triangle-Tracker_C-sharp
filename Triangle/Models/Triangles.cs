@@ -1,7 +1,6 @@
-
-/*    Business Logic    */
 using System;
 
+/*    Business Logic    */
 namespace Triangle
 {
   public class Triangle

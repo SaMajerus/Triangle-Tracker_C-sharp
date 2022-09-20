@@ -8,6 +8,21 @@ namespace Triangle
   {
     public static void Main()
     {
+      Console.WriteLine("Enter the length for Side 1:  ");
+      string stringS1 = Console.ReadLine();
+      int s1 = int.Parse(stringS1);
+
+      Console.WriteLine("Enter the length for Side 2:  ");
+      string stringS2 = Console.ReadLine();
+      int s2 = int.Parse(stringS2);
+
+      Console.WriteLine("Enter the length for Side 3:  ");
+      string stringS3 = Console.ReadLine();
+      int s3 = int.Parse(stringS3);
+
+      Triangle testThis = new Triangle(s1, s2, s3);
+      Console.WriteLine(testThis.Classify());
+      /* 
       Triangle notATriangle = new Triangle(1, 2, 4);
       Triangle isosceles = new Triangle(4, 2, 4);
       Triangle equilateral = new Triangle(2, 2, 2);
@@ -17,6 +32,7 @@ namespace Triangle
       Console.WriteLine(isosceles.Classify()); 
       Console.WriteLine(equilateral.Classify()); 
       Console.WriteLine(scalene.Classify()); 
+      */ 
 
     }
   }
