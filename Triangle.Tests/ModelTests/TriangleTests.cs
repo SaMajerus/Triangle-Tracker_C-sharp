@@ -17,6 +17,12 @@ namespace Triangle.Tests
       Triangle testTriangle = new Triangle();
       Assert.AreEqual(true, testTriangle.IsTriangle(5, 5, 5));
     }
+
+    [TestMethod]
+    public void IsTriangle_IsIsosceles_True(){
+      Triangle testTriangle = new Triangle();
+      Assert.AreEqual(true, testTriangle.IsTriangle(5, 3, 5));
+    }
     
   }
 }
