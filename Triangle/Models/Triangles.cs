@@ -2,26 +2,26 @@ namespace Triangle
 {
   public class Triangle
   {
-    public bool IsTriangle(int a, int b, int c)
+    public string Classify(int a, int b, int hyp)
     {
-      if((a == c)) 
+      if((a == hyp)) 
       {
         if(!(a == b))
         {
-          return true; //Isosceles
+          return "Isosceles"; //Isosceles
         }
         else
         {
-          return true; //Equilateral
+          return "Equilateral"; //Equilateral
         }
       }
-      else if (a + b > c)
+      else if (a + b > hyp) 
       {  //If one side is <= the sum of the other two sides, then it is a valid Triangle, and thus, a scalene
-        return true;
+        return "Scalene";
       }
       else 
       {
-        return true; //Is triangle
+        return "Not a triangle"; //Is not a triangle
       }
     }
 
