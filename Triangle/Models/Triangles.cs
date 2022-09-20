@@ -4,7 +4,7 @@ namespace Triangle
   {
     public bool IsTriangle(int a, int b, int c)
     {
-      return false;
+      return true;
     }
   }
 }
