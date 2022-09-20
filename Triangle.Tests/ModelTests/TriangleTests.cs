@@ -10,7 +10,12 @@ namespace Triangle.Tests
     public void IsTriangle_True(){
       Triangle testTriangle = new Triangle();
       Assert.AreEqual(true, testTriangle.IsTriangle(1, 2, 3));
-      //Assert.AreEqual(false, testLeapYear.IsLeapYear(2011)); 
+    }
+
+    [TestMethod]
+    public void IsTriangle_IsEquilateral_True(){
+      Triangle testTriangle = new Triangle();
+      Assert.AreEqual(true, testTriangle.IsTriangle(5, 5, 5));
     }
     
   }

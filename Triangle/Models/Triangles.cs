@@ -4,7 +4,16 @@ namespace Triangle
   {
     public bool IsTriangle(int a, int b, int c)
     {
-      return true;
+      if((a == b) && (b==c))
+      {
+        return false;
+      }
+      else 
+      {
+        return true;
+      }
+
     }
+
   }
 }
