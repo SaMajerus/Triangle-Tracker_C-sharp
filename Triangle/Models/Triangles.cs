@@ -4,9 +4,9 @@ namespace Triangle
   {
     public bool IsTriangle(int a, int b, int c)
     {
-      if((a == b) && (b==c))
+      if((a == c)) 
       {
-        if(c != a)
+        if(!(a == b))
         {
           return true; //Isosceles
         }
