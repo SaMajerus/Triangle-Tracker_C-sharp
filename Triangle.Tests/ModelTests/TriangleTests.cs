@@ -7,9 +7,9 @@ namespace Triangle.Tests
   public class TriangleTests {
 
     [TestMethod]
-    public void IsTriangle_LengthFiveEquilateral_True(){
-      Triangle testLeapYear = new Triangle();
-      Assert.AreEqual(true, testLeapYear.IsTriangle(5, 5, 5));
+    public void IsTriangle_True(){
+      Triangle testTriangle = new Triangle();
+      Assert.AreEqual(true, testTriangle.IsTriangle(1, 2, 3));
       //Assert.AreEqual(false, testLeapYear.IsLeapYear(2011)); 
     }
     
