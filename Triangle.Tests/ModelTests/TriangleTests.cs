@@ -7,9 +7,9 @@ namespace Triangle.Tests
   public class TriangleTests {
 
     [TestMethod]
-    public void IsLeapYear_NumberDivisibleByFour_True(){
+    public void IsTriangle_LengthFiveEquilateral_True(){
       Triangle testLeapYear = new Triangle();
-      Assert.AreEqual(true, testLeapYear.IsLeapYear(2012));
+      Assert.AreEqual(true, testLeapYear.IsTriangle(5, 5, 5));
       //Assert.AreEqual(false, testLeapYear.IsLeapYear(2011)); 
     }
     

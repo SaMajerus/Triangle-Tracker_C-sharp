@@ -2,7 +2,7 @@ namespace Triangle
 {
   public class Triangle
   {
-    public bool IsLeapYear(int year)
+    public bool IsTriangle(int a, int b, int c)
     {
       return false;
     }
