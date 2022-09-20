@@ -1,12 +1,27 @@
+
+/*    Business Logic    */
+using System;
+
 namespace Triangle
 {
   public class Triangle
   {
-    public string Classify(int a, int b, int hyp)
+    public int A { get; set; }
+    public int B { get; set; }
+    public int Hyp { get; set; }
+
+    public Triangle(int a, int b, int hyp)
     {
-      if((a == hyp)) 
+      A = a;
+      B = b;
+      Hyp = hyp;
+    }
+
+    public string Classify()
+    {
+      if((A == Hyp)) 
       {
-        if(!(a == b))
+        if(!(A == B))
         {
           return "Isosceles"; //Isosceles
         }
@@ -15,7 +30,7 @@ namespace Triangle
           return "Equilateral"; //Equilateral
         }
       }
-      else if (a + b > hyp) 
+      else if (A + B > Hyp) 
       {  //If one side is <= the sum of the other two sides, then it is a valid Triangle, and thus, a scalene
         return "Scalene";
       }
